@@ -113,16 +113,43 @@
 
 
 
-# CLASS METHOD DECORATOR
-# --> It is for whole class
-class Person:
-    name = "anonymous"
+# # CLASS METHOD DECORATOR
+# # --> It is for whole class
+# class Person:
+#     name = "anonymous"
 
-    @classmethod
-    def changeName(self, name):
-        self.name = name
+#     # @classmethod
+#     # def changeName(self, name):
+#     #     self.name = name
 
-p1 = Person()
-p1.changeName("Nitesh")
-print(p1.name)
-print(Person.name)
+#     @classmethod
+#     def changeName(cls, name):
+#         cls.name = name
+
+#     # def changeName(self, name):
+#     #     self.__class__.name = name
+
+# p1 = Person()
+# p1.changeName("Nitesh")
+# print(p1.name)
+# print(Person.name)
+
+
+
+
+class Student:
+    def __init__(self, phy, chem, math):
+        self.phy = phy
+        self.chem = chem
+        self.math = math
+    
+    def calcPercentage(self):
+        self.percentage = str((self.phy + self.chem + self.math)/3) + "%"
+
+s1 = Student(98, 99, 100)
+s1.calcPercentage()
+print(s1.percentage)
+
+s1.phy = 86
+s1.calcPercentage()
+print(s1.percentage)
