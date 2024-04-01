@@ -137,19 +137,66 @@
 
 
 
-class Student:
-    def __init__(self, phy, chem, math):
-        self.phy = phy
-        self.chem = chem
-        self.math = math
+# class Student:
+#     def __init__(self, phy, chem, math):
+#         self.phy = phy
+#         self.chem = chem
+#         self.math = math
     
-    def calcPercentage(self):
-        self.percentage = str((self.phy + self.chem + self.math)/3) + "%"
+#     # def calcPercentage(self):
+#     #     self.percentage = str((self.phy + self.chem + self.math)/3) + "%"
 
-s1 = Student(98, 99, 100)
-s1.calcPercentage()
-print(s1.percentage)
+#     @property
+#     def percentage(self):
+#         return str((self.phy + self.chem + self.math)/3) + "%"
 
-s1.phy = 86
-s1.calcPercentage()
-print(s1.percentage)
+# s1 = Student(98, 99, 100)
+# print(s1.percentage)
+
+# s1.phy = 86
+# print(s1.percentage)
+
+
+
+
+
+
+
+# # POLYMORPHISM : OPERATOR OVERLOADING
+# # --> WHEN SAME OPERATOR IS ALLOWED TO HAVE DIFFERENT MEANING
+
+# print(1 + 2)  #add
+# print("Nitesh " + "Gupta")  #concatenate
+# print([1,2,3] + [4,5,6])  #merge
+# # SAME + BUT DIFFERENT MEANINGS
+
+
+# class Complex:
+#     def __init__(self, real, img):
+#         self.real = real
+#         self.img = img
+
+#     def showNumber(self):
+#         print(self.real, "i +", self.img, "j")
+
+#     def __add__(self, num2):
+#         newReal = self.real + num2.real
+#         newImg = self.img + num2.img
+#         return Complex(newReal, newImg)
+    
+#     def __sub__(self, num2):
+#         newReal = self.real - num2.real
+#         newImg = self.img - num2.img
+#         return Complex(newReal, newImg)
+
+# n1 = Complex(2,4)
+# n1.showNumber()
+
+# n2 = Complex(7,8)
+# n2.showNumber()
+
+# n3 = n1 + n2
+# n3.showNumber()
+
+# n4 = n2 - n1
+# n4.showNumber()
