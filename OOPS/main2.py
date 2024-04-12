@@ -200,3 +200,65 @@
 
 # n4 = n2 - n1
 # n4.showNumber()
+
+
+
+
+
+
+# class Circle:
+#     def __init__(self, radius):
+#         self.radius = radius
+    
+#     def Area(self):
+#         self.area = 3.14*self.radius*self.radius
+#         print(self.area)
+
+#     def Perimeter(self):
+#         self.perimeter = 2*3.14*self.radius
+#         print(self.perimeter)
+
+# c1 = Circle(5)
+# c1.Area()
+# c1.Perimeter()
+
+
+
+
+
+# class Employee:
+#     def __init__(self, role, dept, salary):
+#         self.role = role
+#         self.dept = dept
+#         self.salary = salary
+#     def showDetails(self):
+#         print(self.role, self.dept, self.salary)
+
+# class Engineer(Employee):
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+#         super().__init__("Engineer", "IT", "900000")
+
+# e1 = Engineer("Nitesh", 19)
+# e1.showDetails()
+
+
+
+# class Order:
+#     def __init__(self, item, price):
+#         self.item = item
+#         self.price = price
+
+#     def __gt__(self, o2):
+#         if self.price > o2.price:
+#             print("o1 > o2")
+#         else:
+#             print("o1 < o2")
+
+# o1 = Order("Shivek", 6)
+# o2 = Order("Nasib", 9)
+
+# o1 > o2
+
+        

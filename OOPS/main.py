@@ -88,24 +88,24 @@
 
 
 
-class Account:
-    def __init__(self, balance, accountNo):
-        self.balance = balance
-        self.accountNo = accountNo
+# class Account:
+#     def __init__(self, balance, accountNo):
+#         self.balance = balance
+#         self.accountNo = accountNo
     
-    def debit(self, debitedAmt):
-        self.balance -= debitedAmt
-        print("Rs.", debitedAmt, "was debited")
+#     def debit(self, debitedAmt):
+#         self.balance -= debitedAmt
+#         print("Rs.", debitedAmt, "was debited")
 
-    def credit(self, creditedAmt):
-        self.balance += creditedAmt
-        print("Rs.", creditedAmt, "was credited")
+#     def credit(self, creditedAmt):
+#         self.balance += creditedAmt
+#         print("Rs.", creditedAmt, "was credited")
     
-    def displayBalance(self):
-        print(self.accountNo, ":", self.balance)
+#     def displayBalance(self):
+#         print(self.accountNo, ":", self.balance)
 
-a1 = Account(2000, "hy358u8fduh")
-a1.debit(1500)
-a1.credit(2000)
-a1.displayBalance()
+# a1 = Account(2000, "hy358u8fduh")
+# a1.debit(1500)
+# a1.credit(2000)
+# a1.displayBalance()
     
